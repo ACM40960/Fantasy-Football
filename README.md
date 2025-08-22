@@ -171,7 +171,7 @@ fantasy_football/
 
 This project demonstrates how combining a tree‑based model and a neural network can provide a more balanced, stable predictor of player impact. After cleaning and engineering per‑90 features from match‑level data, we trained both models and used cross‑validation to compute ensemble weights. Feature importance analysis consistently highlighted creative metrics (such as key passes) and playing time as the strongest predictors, while disciplinary statistics had little influence. The framework is fully adaptable to other leagues or seasons and serves as a solid foundation for fantasy‑football optimisation or broader sports analytics research.
 
-![Description of the image](assets/consensus.png)
+![Description of the image](assets/consenseus.png)
 
 ## Potential extensions
 
