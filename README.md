@@ -100,7 +100,7 @@ The table below summarises the performance of each model on the held‑out test 
 - XGBoost is more conservative but has slightly higher average precision when using its optimal threshold.  
 - The **ensemble improves average precision** (0.6935 vs. 0.6775/0.6741) by balancing false positives and false negatives, although the F1 at 0.5 is lower because the ensemble probability distribution is more concentrated around mid‑range values.
 
-![The ROC curve test](/ROC.png)
+![The ROC curve test](assets/ROC.png)
 
 ### Threshold sweep highlights
 
@@ -108,13 +108,13 @@ The table below summarises the performance of each model on the held‑out test 
 - **Neural Net** – best F1 of **0.6557** at threshold 0.40.  
 These custom cut‑offs provide better decision rules for fantasy‑football managers interested in maximising precision or recall.
 
-![Description of the image](/Threshold.png)
+![Description of the image](assets/Threshold.png)
 
 ### Ensemble weighting
 
 Cross‑validation yields weights of **wₓgᵦ ≈ 0.49** and **wₘˡᵖ ≈ 0.51**, meaning the neural network contributes slightly more to the final prediction. This weighting is driven by marginally higher validation average precision of the MLP across folds.
 
-![Ensemble](/ensemble.png)
+![Ensemble](assets/ensemble.png)
 
 ### Feature importance insights
 
@@ -170,6 +170,8 @@ fantasy_football/
 ## Conclusion
 
 This project demonstrates how combining a tree‑based model and a neural network can provide a more balanced, stable predictor of player impact. After cleaning and engineering per‑90 features from match‑level data, we trained both models and used cross‑validation to compute ensemble weights. Feature importance analysis consistently highlighted creative metrics (such as key passes) and playing time as the strongest predictors, while disciplinary statistics had little influence. The framework is fully adaptable to other leagues or seasons and serves as a solid foundation for fantasy‑football optimisation or broader sports analytics research.
+
+![Description of the image](assets/Threshold.png)
 
 ## Potential extensions
 
